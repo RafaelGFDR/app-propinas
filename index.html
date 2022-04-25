@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,58 +8,47 @@
     <!-- hoja de estilos -->
     <link rel="stylesheet" href="./css/styles.css">
     <!-- título de página -->
-    <title>Título de la página</title>
+    <title>App-propinas</title>
     <!-- ícono de pàgina -->
+    <link rel="shortcut icon" href="img/istockphoto-1333505917-612x612.jpg" type="image/x-icon">
     <!-- fuentes -->
+    <link rel="stylesheet" href="">
     <!-- javascript -->
+    <script src="js/main.js"></script>
 </head>
-<body>
-<div class="row">
-    <div class="column-1">
-        <p>1</p>
-    </div>
-</div>
-<div class="row">
-    <div class="column-2">
-        <p>2</p>
-    </div>
-    <div class="column-2">
-        <p>3</p>
-    </div>
-</div>
-<div class="row">
-    <div class="column-4">
-        <p>4</p>
-    </div>
-    <div class="column-4">
-        <p>5</p>
-    </div>
-    <div class="column-4">
-        <p>6</p>
-    </div>
-    <div class="column-4">
-        <p>7</p>
-    </div>
-</div>
-<div class="row">
-    <div class="column-2">
-        <p>8</p>
-    </div>
-    <div class="column-2">
-        <p>9</p>
-    </div>
-</div>
-<div class="row">
-    <div class="column-3">
-        <p>10</p>
-    </div>
-    <div class="column-3">
-        <p>11</p>
-    </div>
-    <div class="column-3">
-        <p>12</p>
-    </div>
-</div>
 
+<body class="flex">
+    <div>
+        <div class="row">
+            <div class="column-1">
+                <h1>Calculador de propinas</h1>
+            </div>
+        </div>
+        <div class="row aling">
+            <div class="column-1">
+                <label for="">Total de la cuenta</label>
+                <input type="number" placeholder="Inserte un valor" id="total">
+            </div><br>
+            <div class="column-1">
+                <label for="">¿Que tal el servidor?</label>
+                <select name="" id="servicio">
+                <option value="0">0% Horrible</option>
+                <option value="0.15">15% Bien</option>
+                <option value="0.30">30% Excelente</option>
+            </select>
+            </div><br>
+            <div class="column-1">
+                <label for="">¿Cuantas personas van a pagar?</label>
+                <input type="number" placeholder="Numero de personas" id="personas">
+            </div><br>
+            <div class="column-1">
+                <input type="submit" value="Calcular" onclick="calcProp()">
+            </div><br>
+            <div class="column-1">
+                <p id="resultado"></p>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
